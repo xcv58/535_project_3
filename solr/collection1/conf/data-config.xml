@@ -14,7 +14,17 @@
             <field column="user"      xpath="/mediawiki/page/revision/contributor/username" />
             <field column="userId"    xpath="/mediawiki/page/revision/contributor/id" />
             <field column="text"      xpath="/mediawiki/page/revision/text" />
-            <field column="do"      xpath="/mediawiki/page/revision/do" />
+	    <field column="get in"      xpath="/mediawiki/page/revision/get_in" />
+	    <field column="see"      xpath="/mediawiki/page/revision/see" />
+	    <field column="eat"      xpath="/mediawiki/page/revision/eat" />
+	    <field column="do"      xpath="/mediawiki/page/revision/do" />
+	    <field column="drink"      xpath="/mediawiki/page/revision/drink" />
+	    <field column="get around"      xpath="/mediawiki/page/revision/get_around" />
+	    <field column="stay safe"      xpath="/mediawiki/page/revision/stay_safe" />
+	    <field column="go next"      xpath="/mediawiki/page/revision/go_next" />
+	    <field column="sleep"      xpath="/mediawiki/page/revision/sleep" />
+	    <field column="buy"      xpath="/mediawiki/page/revision/buy" />
+	    <field column="understand"      xpath="/mediawiki/page/revision/understand" />
             <field column="timestamp" xpath="/mediawiki/page/revision/timestamp" dateTimeFormat="yyyy-MM-dd'T'hh:mm:ss'Z'" />
             <field column="$skipDoc"  regex="^#REDIRECT .*" replaceWith="true" sourceColName="text"/>
        </entity>

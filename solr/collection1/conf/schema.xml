@@ -1,17 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <schema name="example" version="1.5">
- <fields>
-   <field name="id"        type="string"  indexed="true" stored="true" required="true"/>
-   <field name="title"     type="string"  indexed="true" stored="false"/>
-   <field name="revision"  type="int"    indexed="true" stored="true"/>
-   <field name="user"      type="string"  indexed="true" stored="true"/>
-   <field name="userId"    type="int"     indexed="true" stored="true"/>
-   <field name="text"      type="text_en"    indexed="true" stored="true"/>
-   <field name="timestamp" type="date"    indexed="true" stored="true"/>
-   <field name="titleText" type="text_en"    indexed="true" stored="true"/>
-   <field name="_version_" type="string"  indexed="true" stored="true" multiValued="false"/>
- </fields>
+  <fields>
+    <field name="id"        type="string"  indexed="true" stored="true" required="true"/>
+    <field name="title"     type="string"  indexed="true" stored="false"/>
+    <field name="revision"  type="int"    indexed="true" stored="true"/>
+    <field name="user"      type="string"  indexed="true" stored="true"/>
+    <field name="userId"    type="int"     indexed="true" stored="true"/>
+    <field name="text"      type="text_en"    indexed="true" stored="true"/>
+    <field name="get in"      type="text_en"  indexed="true" stored="true"/>
+    <field name="see"         type="text_en"  indexed="true" stored="true"/>
+    <field name="eat"         type="text_en"  indexed="true" stored="true"/>
+    <field name="do"	         type="text_en"  indexed="true" stored="true"/>
+    <field name="drink"      type="text_en"  indexed="true" stored="true"/>
+    <field name="get around"  type="text_en"  indexed="true" stored="true"/>
+    <field name="stay safe"  type="text_en"  indexed="true" stored="true"/>
+    <field name="go next"     type="text_en"  indexed="true" stored="true"/>
+    <field name="sleep"       type="text_en"  indexed="true" stored="true"/>
+    <field name="buy"         type="text_en"  indexed="true" stored="true"/>
+    <field name="understand"  type="text_en"  indexed="true" stored="true"/>
+    <field name="timestamp" type="date"    indexed="true" stored="true"/>
+    <field name="titleText" type="text_en"    indexed="true" stored="true"/>
+    <field name="_version_" type="string"  indexed="true" stored="true" multiValued="false"/>
+  </fields>
 
    <uniqueKey>id</uniqueKey>
    <copyField source="title" dest="titleText"/>
