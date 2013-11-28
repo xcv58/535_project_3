@@ -14,19 +14,19 @@
             <field column="user"      xpath="/mediawiki/page/revision/contributor/username" />
             <field column="userId"    xpath="/mediawiki/page/revision/contributor/id" />
             <field column="text"      xpath="/mediawiki/page/revision/text" />
-	    <field column="get in"      xpath="/mediawiki/page/revision/text/get_in" />
-	    <field column="see"      xpath="/mediawiki/page/revision/text/see" />
-	    <field column="eat"      xpath="/mediawiki/page/revision/text/eat" />
-	    <field column="do"      xpath="/mediawiki/page/revision/text/do" />
-	    <field column="drink"      xpath="/mediawiki/page/revision/text/drink" />
-	    <field column="get around"      xpath="/mediawiki/page/revision/text/get_around" />
-	    <field column="stay safe"      xpath="/mediawiki/page/revision/text/stay_safe" />
-	    <field column="go next"      xpath="/mediawiki/page/revision/text/go_next" />
-	    <field column="sleep"      xpath="/mediawiki/page/revision/text/sleep" />
-	    <field column="buy"      xpath="/mediawiki/page/revision/text/buy" />
-	    <field column="understand"      xpath="/mediawiki/page/revision/text/understand" />
-	    <field column="ispartof"      xpath="/mediawiki/page/revision/text/ispartof" />
-	    <field column="geo"      xpath="/mediawiki/page/revision/text/geo" />
+            <field column="get in"      xpath="/mediawiki/page/revision/text/get_in" />
+            <field column="see"      xpath="/mediawiki/page/revision/text/see" />
+            <field column="eat"      xpath="/mediawiki/page/revision/text/eat" />
+            <field column="do"      xpath="/mediawiki/page/revision/text/do" />
+            <field column="drink"      xpath="/mediawiki/page/revision/text/drink" />
+            <field column="get around"      xpath="/mediawiki/page/revision/text/get_around" />
+            <field column="stay safe"      xpath="/mediawiki/page/revision/text/stay_safe" />
+            <field column="go next"      xpath="/mediawiki/page/revision/text/go_next" />
+            <field column="sleep"      xpath="/mediawiki/page/revision/text/sleep" />
+            <field column="buy"      xpath="/mediawiki/page/revision/text/buy" />
+            <field column="understand"      xpath="/mediawiki/page/revision/text/understand" />
+            <field column="ispartof"      xpath="/mediawiki/page/revision/text/ispartof" />
+            <field column="geo"      xpath="/mediawiki/page/revision/text/geo" />
             <field column="timestamp" xpath="/mediawiki/page/revision/timestamp" dateTimeFormat="yyyy-MM-dd'T'hh:mm:ss'Z'" />
             <field column="$skipDoc"  regex="^#REDIRECT .*" replaceWith="true" sourceColName="text"/>
        </entity>
