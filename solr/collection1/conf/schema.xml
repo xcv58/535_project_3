@@ -20,7 +20,9 @@
     <field name="buy"         type="text_en"  indexed="true" stored="true"/>
     <field name="understand"  type="text_en"  indexed="true" stored="true"/>
     <field name="ispartof"  type="text_en"  indexed="true" stored="true"/>
-    <field name="geo"  type="text_en"  indexed="true" stored="true"/>
+    <field name="geo"  type="location"  indexed="true" stored="true"/>
+<field name="geo_0_coordinate" type="double" indexed="true" stored="true" />
+<field name="geo_1_coordinate" type="double" indexed="true" stored="true" />
     <field name="timestamp" type="date"    indexed="true" stored="true"/>
     <field name="titleText" type="text_en"    indexed="true" stored="true"/>
     <field name="_version_" type="string"  indexed="true" stored="true" multiValued="false"/>
@@ -31,6 +33,12 @@
    <!-- <dynamicField name="*_i"  type="string"    indexed="true"  stored="true"/> -->
    <dynamicField name="*_coordinate"  type="tdouble" indexed="true"  stored="false"/>
  
+   <!-- Type used to index the lat and lon components for the "location" FieldType -->
+   <dynamicField name="*_coordinate"  type="tdouble" indexed="true"  stored="false" />
+   <dynamicField name="*_dt"  type="date"    indexed="true"  stored="true"/>
+   <dynamicField name="*_dts" type="date"    indexed="true"  stored="true" multiValued="true"/>
+   <dynamicField name="*_p"  type="location" indexed="true" stored="true"/>
+
   <types>
     <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
     <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>

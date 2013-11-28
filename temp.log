@@ -1,0 +1,311 @@
+0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
+44   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /Users/xcv58/solr-4.5.1/wiki/contexts at interval 0
+52   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /Users/xcv58/solr-4.5.1/wiki/contexts/solr-jetty-context.xml
+1260 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+1301 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+1325 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+1325 [main] INFO  org.apache.solr.core.SolrResourceLoader  – solr home defaulted to 'solr/' (could not find system property or JNDI)
+1326 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: 'solr/'
+1444 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /Users/xcv58/solr-4.5.1/wiki/solr/solr.xml
+1660 [main] INFO  org.apache.solr.core.ConfigSolrXml  – Config-defined core root directory: 
+1678 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 1544896400
+1679 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=solr/]
+1706 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+1707 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: http://
+1707 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+1708 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+1712 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+1713 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+1713 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+1713 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+1714 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+1725 [main] INFO  org.apache.solr.client.solrj.impl.HttpClientUtil  – Creating new http client, config:maxConnectionsPerHost=20&maxConnections=10000&socketTimeout=0&connTimeout=0&retry=false
+1898 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+1899 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+1940 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /Users/xcv58/solr-4.5.1/wiki/solr
+1956 [main] INFO  org.apache.solr.core.CoresLocator  – Found core collection1 in /Users/xcv58/solr-4.5.1/wiki/solr/collection1/
+1957 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
+1959 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'collection1' using instanceDir: /Users/xcv58/solr-4.5.1/wiki/solr/collection1
+1959 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/Users/xcv58/solr-4.5.1/wiki/solr/collection1/'
+2063 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrConfig  – Adding specified lib dirs to ClassLoader
+2066 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2066 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2066 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2066 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2067 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2067 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/commons-compress-1.4.1.jar' to classloader
+2068 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/dom4j-1.6.1.jar' to classloader
+2068 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/fontbox-1.8.1.jar' to classloader
+2068 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/icu4j-49.1.jar' to classloader
+2069 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/isoparser-1.0-RC-1.jar' to classloader
+2069 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2069 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/jempbox-1.8.1.jar' to classloader
+2070 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2070 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2070 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/netcdf-4.2-min.jar' to classloader
+2070 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/pdfbox-1.8.1.jar' to classloader
+2071 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/poi-3.9.jar' to classloader
+2071 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/poi-ooxml-3.9.jar' to classloader
+2071 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/poi-ooxml-schemas-3.9.jar' to classloader
+2071 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/poi-scratchpad-3.9.jar' to classloader
+2072 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/rome-0.9.jar' to classloader
+2072 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2072 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/tika-core-1.4.jar' to classloader
+2072 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/tika-parsers-1.4.jar' to classloader
+2073 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/vorbis-java-core-0.1.jar' to classloader
+2073 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/vorbis-java-tika-0.1.jar' to classloader
+2073 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2073 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/xmlbeans-2.3.0.jar' to classloader
+2074 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/extraction/lib/xz-1.0.jar' to classloader
+2075 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/dist/solr-cell-4.5.1.jar' to classloader
+2076 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/clustering/lib/attributes-binder-1.2.0.jar' to classloader
+2077 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/clustering/lib/carrot2-mini-3.8.0.jar' to classloader
+2077 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+2077 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/clustering/lib/jackson-core-asl-1.7.4.jar' to classloader
+2078 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/clustering/lib/jackson-mapper-asl-1.7.4.jar' to classloader
+2078 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2078 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2078 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+2079 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/dist/solr-clustering-4.5.1.jar' to classloader
+2080 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2080 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2081 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/dist/solr-langid-4.5.1.jar' to classloader
+2083 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/velocity/lib/commons-beanutils-1.7.0.jar' to classloader
+2083 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+2084 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2084 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2085 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/dist/solr-velocity-4.5.1.jar' to classloader
+2086 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/dist/solr-dataimporthandler-4.5.1.jar' to classloader
+2087 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/Users/xcv58/solr-4.5.1/dist/solr-dataimporthandler-extras-4.5.1.jar' to classloader
+2347 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.update.SolrIndexConfig  – IndexWriter infoStream solr logging is enabled
+2353 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: LUCENE_45
+2521 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+2528 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from schema.xml
+2609 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [collection1] Schema name=example
+3225 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: id
+3337 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.schema.FileExchangeRateProvider  – Reloading exchange rates from file currency.xml
+3344 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.schema.FileExchangeRateProvider  – Reloading exchange rates from file currency.xml
+3489 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.NRTCachingDirectoryFactory
+3496 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Opening new SolrCore at /Users/xcv58/solr-4.5.1/wiki/solr/collection1/, dataDir=/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/
+3498 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.JmxMonitoredMap  – No JMX servers found, not exposing Solr information with JMX.
+3502 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+3503 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+3514 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /Users/xcv58/solr-4.5.1/wiki/solr/collection1/data
+3514 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index/
+3515 [coreLoadExecutor-3-thread-1] WARN  org.apache.solr.core.SolrCore  – [collection1] Solr index directory '/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index' doesn't exist. Creating new index...
+3522 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index
+3562 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.NIOFSDirectory@/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1d61ffdf; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+3562 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+3565 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – created json: solr.JSONResponseWriter
+3565 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – adding lazy queryResponseWriter: solr.VelocityResponseWriter
+3566 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – created velocity: solr.VelocityResponseWriter
+3569 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – created xslt: solr.XSLTResponseWriter
+3569 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.response.XSLTResponseWriter  – xsltCacheLifetimeSeconds=5
+3648 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+3660 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /dataimport: org.apache.solr.handler.dataimport.DataImportHandler
+3668 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /select: solr.SearchHandler
+3668 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /query: solr.SearchHandler
+3671 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /get: solr.RealTimeGetHandler
+3672 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /browse: solr.SearchHandler
+3676 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+3678 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: solr.JsonUpdateRequestHandler
+3681 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: solr.CSVRequestHandler
+3681 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.extraction.ExtractingRequestHandler
+3682 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/extract: solr.extraction.ExtractingRequestHandler
+3682 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+3682 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+3683 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.DocumentAnalysisRequestHandler
+3683 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/document: solr.DocumentAnalysisRequestHandler
+3686 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: solr.admin.AdminHandlers
+3689 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+3692 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /debug/dump: solr.DumpRequestHandler
+3703 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+3703 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+3703 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /spell: solr.SearchHandler
+3704 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+3704 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /tvrh: solr.SearchHandler
+3704 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: org.apache.solr.handler.js.JavaScriptRequestHandler
+3704 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /js: org.apache.solr.handler.js.JavaScriptRequestHandler
+3704 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+3705 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /terms: solr.SearchHandler
+3705 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.SearchHandler
+3705 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /elevate: solr.SearchHandler
+3725 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+3727 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+3728 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+3743 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: if uncommited for 15000ms; 
+3744 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+3748 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.NIOFSDirectory@/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1d61ffdf; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+3748 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+3759 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@29fefce8 main
+3764 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Initializing spell checkers
+3770 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.spelling.DirectSolrSpellChecker  – init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+3777 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – No queryConverter defined, using default converter
+3779 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.component.QueryElevationComponent  – Loading QueryElevation from: /Users/xcv58/solr-4.5.1/wiki/solr/collection1/conf/elevate.xml
+3817 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
+3817 [searcherExecutor-4-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@29fefce8 main{StandardDirectoryReader(segments_1:1:nrt)}
+3818 [coreLoadExecutor-3-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: collection1
+3820 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/Users/xcv58/solr-4.5.1/wiki
+3821 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+3887 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
+3890 [searcherExecutor-4-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=70 
+3891 [searcherExecutor-4-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
+3891 [searcherExecutor-4-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: default
+3892 [searcherExecutor-4-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  – Loading spell index for spellchecker: wordbreak
+3892 [searcherExecutor-4-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Registered new searcher Searcher@29fefce8 main{StandardDirectoryReader(segments_1:1:nrt)}
+64653 [qtp1773103387-15] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1385678232989&wt=json} status=0 QTime=2 
+64711 [qtp1773103387-11] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1385678233018&wt=json} status=0 QTime=32 
+64773 [qtp1773103387-11] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&_=1385678233092&wt=json} status=0 QTime=3 
+64774 [qtp1773103387-12] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678233095&wt=json} status=0 QTime=7 
+64776 [qtp1773103387-15] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=show-config&_=1385678233093} status=0 QTime=7 
+65098 [qtp1773103387-11] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1385678233436&wt=json} status=0 QTime=0 
+65121 [qtp1773103387-11] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1385678233450&wt=json} status=0 QTime=11 
+66638 [qtp1773103387-18] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1385678234972&wt=json} status=0 QTime=0 
+66727 [qtp1773103387-18] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1385678235054&wt=json} status=0 QTime=13 
+69413 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&_=1385678237746&contentType=text/html;charset%3Dutf-8} status=0 QTime=2 
+69415 [qtp1773103387-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&_=1385678237747&contentType=text/html;charset%3Dutf-8} status=0 QTime=1 
+69444 [qtp1773103387-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/luke params={numTerms=0&_=1385678237774&show=index&wt=json} status=0 QTime=8 
+69445 [qtp1773103387-17] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/replication params={command=details&_=1385678237776&wt=json} status=0 QTime=4 
+69483 [qtp1773103387-27] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1385678237779} status=0 QTime=0 
+69520 [qtp1773103387-28] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/system params={_=1385678237778&wt=json} status=0 QTime=36 
+69521 [qtp1773103387-29] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/ping params={action=status&_=1385678237780&wt=json} status=503 QTime=36 
+72189 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&_=1385678240526&wt=json} status=0 QTime=1 
+72213 [qtp1773103387-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=show-config&_=1385678240552} status=0 QTime=1 
+72213 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&_=1385678240551&wt=json} status=0 QTime=1 
+72218 [qtp1773103387-17] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678240554&wt=json} status=0 QTime=1 
+75355 [qtp1773103387-18] INFO  org.apache.solr.handler.dataimport.DataImporter  – Loading DIH Configuration: ./data-config.xml
+75380 [qtp1773103387-18] INFO  org.apache.solr.handler.dataimport.config.DIHConfiguration  – The field :$skipDoc present in DataConfig does not have a counterpart in Solr Schema
+75380 [qtp1773103387-18] INFO  org.apache.solr.handler.dataimport.DataImporter  – Data Configuration loaded successfully
+75385 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={optimize=false&indent=true&clean=true&commit=true&verbose=false&command=full-import&debug=false&wt=json} status=0 QTime=31 
+75385 [Thread-18] INFO  org.apache.solr.handler.dataimport.DataImporter  – Starting Full Import
+75390 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678243729&wt=json} status=0 QTime=0 
+75408 [Thread-18] INFO  org.apache.solr.handler.dataimport.SimplePropertiesWriter  – Read dataimport.properties
+75483 [Thread-18] WARN  org.apache.solr.handler.dataimport.FileDataSource  – FileDataSource.basePath is empty. Resolving to: /Users/xcv58/solr-4.5.1/wiki/.
+76023 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678244359&wt=json} status=0 QTime=1 
+76198 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678244536&wt=json} status=0 QTime=1 
+76478 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678244816&wt=json} status=0 QTime=0 
+76652 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678244989&wt=json} status=0 QTime=0 
+76810 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678245148&wt=json} status=0 QTime=1 
+78061 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678246400&wt=json} status=0 QTime=0 
+78775 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678247114&wt=json} status=0 QTime=0 
+79486 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678247819&wt=json} status=0 QTime=0 
+79657 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678247996&wt=json} status=0 QTime=0 
+79906 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678248244&wt=json} status=0 QTime=0 
+80082 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678248421&wt=json} status=0 QTime=0 
+80242 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678248581&wt=json} status=0 QTime=0 
+80403 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678248742&wt=json} status=0 QTime=1 
+80559 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678248898&wt=json} status=0 QTime=0 
+80704 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678249043&wt=json} status=0 QTime=1 
+80849 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678249187&wt=json} status=0 QTime=0 
+80992 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678249331&wt=json} status=0 QTime=0 
+81145 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678249484&wt=json} status=0 QTime=1 
+81297 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678249637&wt=json} status=0 QTime=0 
+81441 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678249781&wt=json} status=0 QTime=0 
+81738 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678249933&wt=json} status=0 QTime=0 
+81744 [qtp1773103387-16] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678250078&wt=json} status=0 QTime=1 
+81891 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678250230&wt=json} status=0 QTime=0 
+82036 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678250375&wt=json} status=0 QTime=0 
+82196 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678250535&wt=json} status=0 QTime=0 
+82376 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678250716&wt=json} status=0 QTime=0 
+82525 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678250864&wt=json} status=0 QTime=0 
+82687 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678251023&wt=json} status=0 QTime=0 
+82844 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678251184&wt=json} status=0 QTime=0 
+82998 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678251337&wt=json} status=0 QTime=0 
+83149 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678251489&wt=json} status=0 QTime=0 
+83309 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678251649&wt=json} status=0 QTime=0 
+83463 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678251802&wt=json} status=0 QTime=0 
+83623 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678251962&wt=json} status=0 QTime=1 
+83775 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678252115&wt=json} status=0 QTime=0 
+83937 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678252276&wt=json} status=0 QTime=1 
+84482 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678252820&wt=json} status=0 QTime=1 
+84653 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678252993&wt=json} status=0 QTime=0 
+85231 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678253571&wt=json} status=0 QTime=0 
+85873 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678254212&wt=json} status=0 QTime=1 
+86049 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678254389&wt=json} status=0 QTime=0 
+87068 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678255407&wt=json} status=0 QTime=0 
+90470 [commitScheduler-6-thread-1] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+90573 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678258910&wt=json} status=0 QTime=1 
+90784 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678259118&wt=json} status=0 QTime=1 
+91046 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678259383&wt=json} status=0 QTime=0 
+91245 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678259583&wt=json} status=0 QTime=0 
+91475 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678259808&wt=json} status=0 QTime=0 
+93140 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678261480&wt=json} status=0 QTime=0 
+93944 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678262282&wt=json} status=0 QTime=1 
+95528 [commitScheduler-6-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.NIOFSDirectory@/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1d61ffdf; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.NIOFSDirectory@/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1d61ffdf; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+95529 [commitScheduler-6-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 2
+96336 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678264675&wt=json} status=0 QTime=0 
+96417 [commitScheduler-6-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@60fd097b realtime
+96419 [commitScheduler-6-thread-1] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+96568 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678264907&wt=json} status=0 QTime=0 
+96905 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678265244&wt=json} status=0 QTime=1 
+97098 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678265437&wt=json} status=0 QTime=0 
+98344 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678266684&wt=json} status=0 QTime=0 
+98834 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678267173&wt=json} status=0 QTime=1 
+99059 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678267398&wt=json} status=0 QTime=1 
+99203 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678267542&wt=json} status=0 QTime=0 
+99363 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678267702&wt=json} status=0 QTime=0 
+99524 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678267863&wt=json} status=0 QTime=0 
+99685 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678268023&wt=json} status=0 QTime=0 
+100253 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678268593&wt=json} status=0 QTime=0 
+100678 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678269018&wt=json} status=0 QTime=0 
+101087 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678269427&wt=json} status=0 QTime=0 
+101296 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678269635&wt=json} status=0 QTime=0 
+101480 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678269820&wt=json} status=0 QTime=0 
+101689 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678270029&wt=json} status=0 QTime=0 
+101874 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678270213&wt=json} status=0 QTime=1 
+102058 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678270397&wt=json} status=0 QTime=1 
+102250 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678270589&wt=json} status=0 QTime=0 
+102435 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678270774&wt=json} status=0 QTime=0 
+102611 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678270950&wt=json} status=0 QTime=0 
+102804 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678271143&wt=json} status=0 QTime=1 
+103583 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678271922&wt=json} status=0 QTime=0 
+105472 [commitScheduler-6-thread-1] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+108255 [commitScheduler-6-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.NIOFSDirectory@/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1d61ffdf; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.NIOFSDirectory@/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1d61ffdf; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3}
+108256 [commitScheduler-6-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 3
+108862 [commitScheduler-6-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@3f0762f6 realtime
+108886 [commitScheduler-6-thread-1] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+110248 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678278587&wt=json} status=0 QTime=0 
+112401 [Thread-18] INFO  org.apache.solr.handler.dataimport.DocBuilder  – Import completed successfully
+112401 [Thread-18] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+112431 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678280771&wt=json} status=0 QTime=0 
+112632 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678280971&wt=json} status=0 QTime=1 
+112832 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678281171&wt=json} status=0 QTime=0 
+113413 [Thread-18] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.NIOFSDirectory@/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1d61ffdf; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3}
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.NIOFSDirectory@/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1d61ffdf; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_4,generation=4}
+113413 [Thread-18] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 4
+113421 [Thread-18] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@32693b5 main
+113425 [searcherExecutor-4-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@32693b5 main{StandardDirectoryReader(segments_4:11:nrt _0(4.5.1):C9140 _1(4.5.1):C2327 _2(4.5.1):C8081 _3(4.5.1):C1855 _4(4.5.1):C4446)}
+113426 [searcherExecutor-4-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
+113426 [searcherExecutor-4-thread-1] INFO  org.apache.solr.core.SolrCore  – [collection1] Registered new searcher Searcher@32693b5 main{StandardDirectoryReader(segments_4:11:nrt _0(4.5.1):C9140 _1(4.5.1):C2327 _2(4.5.1):C8081 _3(4.5.1):C1855 _4(4.5.1):C4446)}
+113451 [Thread-18] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
+113452 [Thread-18] INFO  org.apache.solr.handler.dataimport.SimplePropertiesWriter  – Read dataimport.properties
+113457 [Thread-18] INFO  org.apache.solr.handler.dataimport.SimplePropertiesWriter  – Wrote last indexed time to dataimport.properties
+113458 [Thread-18] INFO  org.apache.solr.handler.dataimport.DocBuilder  – Time taken = 0:0:38.49
+113458 [Thread-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [collection1] webapp=/solr path=/dataimport params={optimize=false&indent=true&clean=true&commit=true&verbose=false&command=full-import&debug=false&wt=json} status=0 QTime=31 {deleteByQuery=*:* (-1452988950153003008),add=[10 (1452988950261006336), 27 (1452988950397321216), 29 (1452988950456041472), 33 (1452988950505324544), 36 (1452988950596550656), 37 (1452988950600744960), 40 (1452988950641639424), 42 (1452988950719234048), 44 (1452988950727622656), 47 (1452988950805217280), ... (25849 adds)],commit=} 0 31
+113615 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678281954&wt=json} status=0 QTime=1 
+114162 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/dataimport params={indent=true&command=status&_=1385678282500&wt=json} status=0 QTime=1 
+133780 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select params={indent=true&q=geo:*&_=1385678302103&wt=json} hits=0 status=0 QTime=16 
+145161 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select params={indent=true&q=geo_0_coordinate:*&_=1385678313428&wt=json} hits=19105 status=0 QTime=72 
+154110 [qtp1773103387-18] INFO  org.apache.solr.core.SolrCore  – [collection1] webapp=/solr path=/select params={indent=true&q=geo_1_coordinate:*&_=1385678322438&wt=json} hits=19105 status=0 QTime=9 
+334708 [Thread-0] INFO  org.eclipse.jetty.server.Server  – Graceful shutdown SocketConnector@0.0.0.0:8983
+334708 [Thread-0] INFO  org.eclipse.jetty.server.Server  – Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/Users/xcv58/solr-4.5.1/wiki/solr-webapp/webapp/},/Users/xcv58/solr-4.5.1/wiki/webapps/solr.war
+335710 [Thread-0] INFO  org.apache.solr.core.CoreContainer  – Shutting down CoreContainer instance=1544896400
+335711 [Thread-0] INFO  org.apache.solr.core.SolrCore  – [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@4038a1b0
+335711 [Thread-0] INFO  org.apache.solr.update.UpdateHandler  – closing DirectUpdateHandler2{commits=3,autocommit maxTime=15000ms,autocommits=2,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=25849,cumulative_deletesById=0,cumulative_deletesByQuery=1,cumulative_errors=0}
+335712 [Thread-0] INFO  org.apache.solr.update.SolrCoreState  – Closing SolrCoreState
+335712 [Thread-0] INFO  org.apache.solr.update.DefaultSolrCoreState  – SolrCoreState ref count has reached 0 - closing IndexWriter
+335713 [Thread-0] INFO  org.apache.solr.update.DefaultSolrCoreState  – closing IndexWriter with IndexWriterCloser
+335715 [Thread-0] INFO  org.apache.solr.core.SolrCore  – [collection1] Closing main searcher on request.
+335717 [Thread-0] INFO  org.apache.solr.core.CachingDirectoryFactory  – Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+335725 [Thread-0] INFO  org.apache.solr.core.CachingDirectoryFactory  – looking to close /Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index [CachedDir<<refCount=0;path=/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index;done=false>>]
+335726 [Thread-0] INFO  org.apache.solr.core.CachingDirectoryFactory  – Closing directory: /Users/xcv58/solr-4.5.1/wiki/solr/collection1/data/index
+335726 [Thread-0] INFO  org.apache.solr.core.CachingDirectoryFactory  – looking to close /Users/xcv58/solr-4.5.1/wiki/solr/collection1/data [CachedDir<<refCount=0;path=/Users/xcv58/solr-4.5.1/wiki/solr/collection1/data;done=false>>]
+335727 [Thread-0] INFO  org.apache.solr.core.CachingDirectoryFactory  – Closing directory: /Users/xcv58/solr-4.5.1/wiki/solr/collection1/data
+335729 [Thread-0] INFO  org.eclipse.jetty.server.handler.ContextHandler  – stopped o.e.j.w.WebAppContext{/solr,file:/Users/xcv58/solr-4.5.1/wiki/solr-webapp/webapp/},/Users/xcv58/solr-4.5.1/wiki/webapps/solr.war

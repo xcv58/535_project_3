@@ -6,7 +6,7 @@
                 stream="true"
                 forEach="/mediawiki/page/"
                 url="test.xml"
-                transformer="RegexTransformer,DateFormatTransformer"
+                transformer="RegexTransformer,DateFormatTransformer,NumberFormatTransformer"
                 >
             <field column="id"        xpath="/mediawiki/page/id" />
             <field column="title"     xpath="/mediawiki/page/title" />
