@@ -25,6 +25,8 @@
 	    <field column="sleep"      xpath="/mediawiki/page/revision/text/sleep" />
 	    <field column="buy"      xpath="/mediawiki/page/revision/text/buy" />
 	    <field column="understand"      xpath="/mediawiki/page/revision/text/understand" />
+	    <field column="ispartof"      xpath="/mediawiki/page/revision/text/ispartof" />
+	    <field column="geo"      xpath="/mediawiki/page/revision/text/geo" />
             <field column="timestamp" xpath="/mediawiki/page/revision/timestamp" dateTimeFormat="yyyy-MM-dd'T'hh:mm:ss'Z'" />
             <field column="$skipDoc"  regex="^#REDIRECT .*" replaceWith="true" sourceColName="text"/>
        </entity>
