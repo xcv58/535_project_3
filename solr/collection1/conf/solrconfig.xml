@@ -1415,7 +1415,7 @@
          "default" (and it becomes the default one for the search component). 
       -->
     <lst name="engine">
-      <str name="name">lingo</str>
+      <str name="name">default</str>
 
       <!-- Class name of a clustering algorithm compatible with the Carrot2 framework.
 
@@ -1444,6 +1444,8 @@
            http://download.carrotsearch.com/lingo3g/manual/#chapter.lexical-resources
        -->
       <str name="carrot.resourcesDir">clustering/carrot2</str>
+     <str name="LingoClusteringAlgorithm.desiredClusterCountBase">30</str>
+     <str name="DocumentAssigner.minClusterSize">4</str>
     </lst>
 
     <!-- An example definition for the STC clustering algorithm. -->
