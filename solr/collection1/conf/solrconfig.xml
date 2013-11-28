@@ -1483,6 +1483,8 @@
       <str name="carrot.snippet">features</str>
       <!-- Apply highlighter to the title/ content and use this for clustering. -->
       <bool name="carrot.produceSummary">true</bool>
+      <int name="carrot.numDescriptions">5</int>
+
       <!-- the maximum number of labels per cluster -->
       <!--<int name="carrot.numDescriptions">5</int>-->
       <!-- produce sub clusters -->
@@ -1491,10 +1493,12 @@
       <!-- Configure the remaining request handler parameters. -->
       <str name="defType">edismax</str>
       <str name="qf">
-        text^0.5 features^1.0 name^1.2 sku^1.5 id^10.0 manu^1.1 cat^1.4
+        text^1.3 do^1.5 understatnd^1.3
+        <!-- text^0.5 features^1.0 name^1.2 sku^1.5 id^10.0 manu^1.1 cat^1.4 -->
       </str>
       <str name="q.alt">*:*</str>
-      <str name="rows">10</str>
+      <str name="rows">50</str>
+      <!-- <str name="rows">10</str> -->
       <str name="fl">*,score</str>
     </lst>
     <arr name="last-components">

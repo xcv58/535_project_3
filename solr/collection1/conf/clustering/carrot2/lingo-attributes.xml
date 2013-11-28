@@ -16,9 +16,32 @@
           <attribute key="MultilingualClustering.defaultLanguage">
             <value type="org.carrot2.core.LanguageCode" value="ENGLISH"/>
           </attribute>
-          <attribute key="LingoClusteringAlgorithm.desiredClusterCountBase">
-            <value type="java.lang.Integer" value="20"/>
-          </attribute>
+          <attribute key="DocumentAssigner.exactPhraseAssignment">
+            <value type="java.lang.Boolean" value="true"/>
+         </attribute>
+<attribute key="LingoClusteringAlgorithm.labelAssigner">
+            <value>
+               <wrapper class="org.carrot2.clustering.lingo.SimpleLabelAssigner"/>
+            </value>
+         </attribute>
+         <attribute key="reload-resources">
+            <value type="java.lang.Boolean" value="true"/>
+         </attribute>
+         <attribute key="TermDocumentMatrixBuilder.titleWordsBoost">
+            <value type="java.lang.Double" value="2.0"/>
+         </attribute>
+         <attribute key="TermDocumentMatrixReducer.factorizationFactory">
+            <value type="java.lang.Class" value="org.carrot2.matrix.factorization.LocalNonnegativeMatrixFactorizationFactory"/>
+         </attribute>
+         <attribute key="TermDocumentMatrixReducer.factorizationQuality">
+            <value type="org.carrot2.matrix.factorization.IterationNumberGuesser$FactorizationQuality" value="MEDIUM"/>
+         </attribute>
+<attribute key="TermDocumentMatrixReducer.factorizationFactory">
+            <value type="java.lang.Class" value="org.carrot2.matrix.factorization.LocalNonnegativeMatrixFactorizationFactory"/>
+         </attribute>
+	<attribute key="DocumentAssigner.minClusterSize">
+            <value type="java.lang.Integer" value="4"/>
+         </attribute>
       </value-set>
   </attribute-set>
 </attribute-sets>
