@@ -1409,7 +1409,7 @@
        http://carrot2.github.io/solr-integration-strategies/
     -->
   <searchComponent name="clustering"
-                   enable="${solr.clustering.enabled:false}"
+                   enable="${solr.clustering.enabled:true}"
                    class="solr.clustering.ClusteringComponent" >
     <!-- Declare a named clustering engine. Only one engine can be named 
          "default" (and it becomes the default one for the search component). 
@@ -1476,11 +1476,11 @@
       <bool name="clustering">true</bool>
       <bool name="clustering.results">true</bool>
       <!-- Field name with the logical "title" of a each document (optional) -->
-      <str name="carrot.title">name</str>
+      <str name="carrot.title">understand</str>
       <!-- Field name with the logical "URL" of a each document (optional) -->
       <str name="carrot.url">id</str>
       <!-- Field name with the logical "content" of a each document (optional) -->
-      <str name="carrot.snippet">features</str>
+      <str name="carrot.snippet">do</str>
       <!-- Apply highlighter to the title/ content and use this for clustering. -->
       <bool name="carrot.produceSummary">true</bool>
       <int name="carrot.numDescriptions">5</int>
@@ -1493,7 +1493,7 @@
       <!-- Configure the remaining request handler parameters. -->
       <str name="defType">edismax</str>
       <str name="qf">
-        text^1.3 do^1.5 understatnd^1.3
+        text^1.3 do^1.5 understand^1.3
         <!-- text^0.5 features^1.0 name^1.2 sku^1.5 id^10.0 manu^1.1 cat^1.4 -->
       </str>
       <str name="q.alt">*:*</str>
