@@ -1612,16 +1612,29 @@
                        class="solr.highlight.WeightedFragListBuilder"/>
       
       <!-- default tag FragmentsBuilder -->
+      <!-- <fragmentsBuilder name="default"  -->
+      <!--                   default="true" -->
+      <!--                   class="solr.highlight.ScoreOrderFragmentsBuilder"> -->
+        <!-- 
+        <lst name="defaults">
+          <str name="hl.multiValuedSeparatorChar">/</str>
+        </lst>
+        -->
+      <!-- </fragmentsBuilder> -->
+
       <fragmentsBuilder name="default" 
                         default="true"
                         class="solr.highlight.ScoreOrderFragmentsBuilder">
+        <lst name="defaults">
+          <str name="hl.tag.pre"><![CDATA[<span class="wiki_hl">]]></str>
+          <str name="hl.tag.post"><![CDATA[</span>]]></str>
+        </lst>
         <!-- 
         <lst name="defaults">
           <str name="hl.multiValuedSeparatorChar">/</str>
         </lst>
         -->
       </fragmentsBuilder>
-
       <!-- multi-colored tag FragmentsBuilder -->
       <fragmentsBuilder name="colored" 
                         class="solr.highlight.ScoreOrderFragmentsBuilder">
