@@ -824,6 +824,7 @@
        <str name="echoParams">explicit</str>
        <int name="rows">10</int>
        <str name="df">text</str>
+       <str name="hl">true</str>
      </lst>
     <!-- In addition to defaults, "appends" params can be specified
          to identify values which should be appended to the list of
@@ -883,6 +884,8 @@
        <str name="wt">json</str>
        <str name="indent">true</str>
        <str name="df">text</str>
+       <str name="hl">true</str>
+       <str name="hl.useFastVectorHighlighter">true</str>
      </lst>
   </requestHandler>
 
@@ -1476,6 +1479,7 @@
                   enable="${solr.clustering.enabled:false}"
                   class="solr.SearchHandler">
     <lst name="defaults">
+      <str name="hl">true</str>
       <bool name="clustering">true</bool>
       <bool name="clustering.results">true</bool>
       <!-- Field name with the logical "title" of a each document (optional) -->
@@ -1588,7 +1592,6 @@
       <!-- Configure the standard fragmenter -->
       <!-- This could most likely be commented out in the "default" case -->
       <fragmenter name="gap" 
-                  default="true"
                   class="solr.highlight.GapFragmenter">
         <lst name="defaults">
 	  <str name="hl.requireFieldMatch">true</str>
@@ -1617,14 +1620,16 @@
            (for sentence extraction) 
         -->
       <fragmenter name="regex" 
+                  default="true"
                   class="solr.highlight.RegexFragmenter">
         <lst name="defaults">
           <!-- slightly smaller fragsizes work better because of slop -->
-          <int name="hl.fragsize">70</int>
+          <int name="hl.fragsize">200</int>
           <!-- allow 50% slop on fragment sizes -->
-          <float name="hl.regex.slop">0.5</float>
+          <float name="hl.regex.slop">0.59</float>
           <!-- a basic sentence pattern -->
-          <str name="hl.regex.pattern">[-\w ,/\n\&quot;&apos;]{20,200}</str>
+          <!-- <str name="hl.regex.pattern">[.]{20,20}</str> -->
+          <!-- <str name="hl.regex.pattern">[-\w ,/\n\&quot;&apos;]{20,200}</str> -->
         </lst>
       </fragmenter>
 
@@ -1694,7 +1699,6 @@
       </fragmentsBuilder>
       
       <boundaryScanner name="default" 
-                       default="true"
                        class="solr.highlight.SimpleBoundaryScanner">
         <lst name="defaults">
           <str name="hl.bs.maxScan">100</str>
@@ -1703,6 +1707,7 @@
       </boundaryScanner>
       
       <boundaryScanner name="breakIterator" 
+                       default="true"
                        class="solr.highlight.BreakIteratorBoundaryScanner">
         <lst name="defaults">
           <!-- type should be one of CHARACTER, WORD(default), LINE and SENTENCE -->
