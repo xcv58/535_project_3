@@ -1566,6 +1566,7 @@
       <!-- Configure the standard fragmenter -->
       <!-- This could most likely be commented out in the "default" case -->
       <fragmenter name="gap" 
+                  default="true"
                   class="solr.highlight.GapFragmenter">
         <lst name="defaults">
           <int name="hl.fragsize">100</int>
@@ -1576,7 +1577,6 @@
            (for sentence extraction) 
         -->
       <fragmenter name="regex" 
-                  default="true"
                   class="solr.highlight.RegexFragmenter">
         <lst name="defaults">
           <!-- slightly smaller fragsizes work better because of slop -->
