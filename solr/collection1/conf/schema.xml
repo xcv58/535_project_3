@@ -21,6 +21,7 @@
     <field name="understand"  type="text_en"  indexed="true" stored="true" termVectors="true" termPositions="true" termOffsets="true"/>
     <field name="ispartof"  type="text_en"  indexed="true" stored="true" termVectors="true" termPositions="true" termOffsets="true"/>
     <field name="geo"  type="location"  indexed="true" stored="true"/>
+    <field name="hotelprice"  type="text_en"  indexed="true" stored="true"/>
 <field name="geo_0_coordinate" type="double" indexed="true" stored="true" />
 <field name="geo_1_coordinate" type="double" indexed="true" stored="true" />
     <field name="popularity"  type="long"  indexed="true" stored="true"/>

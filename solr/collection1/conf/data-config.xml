@@ -5,7 +5,7 @@
                 processor="XPathEntityProcessor"
                 stream="true"
                 forEach="/mediawiki/page/"
-                url="test.xml"
+                url="result.xml"
                 transformer="RegexTransformer,DateFormatTransformer,NumberFormatTransformer"
                 >
             <field column="id"        xpath="/mediawiki/page/id" />
@@ -28,6 +28,7 @@
             <field column="ispartof"      xpath="/mediawiki/page/revision/text/ispartof" />
             <field column="geo"      xpath="/mediawiki/page/revision/text/geo" />
             <field column="popularity"      xpath="/mediawiki/page/revision/text/popularity" />
+            <field column="hotelprice"      xpath="/mediawiki/page/revision/text/hotelprice" />
             <field column="timestamp" xpath="/mediawiki/page/revision/timestamp" dateTimeFormat="yyyy-MM-dd'T'hh:mm:ss'Z'" />
             <field column="$skipDoc"  regex="^#REDIRECT .*" replaceWith="true" sourceColName="text"/>
        </entity>
